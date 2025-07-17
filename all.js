@@ -4,12 +4,18 @@ function startScare() {
   setTimeout(() => {
     const jumpscare = document.getElementById("jumpscare");
     jumpscare.style.display = "flex";
-  }, 5000); // 5秒後驚嚇
+    const laugh = document.getElementById("laugh");
+    laugh.play();
+  }, 2000); // 2秒後驚嚇
   
   setTimeout(()=>{
-      const scream = document.getElementById("scream");
+    const horrorBgm = document.getElementById("horrorBgm");
       const joker = document.querySelector(".jumpscare img");
       joker.classList.add("show");
-      scream.play();
-  },6000)
+      horrorBgm.play();
+  },2500)
+
+  setTimeout(() => {
+    window.close(); 
+  }, 5500);
   }

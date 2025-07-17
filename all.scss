@@ -1,14 +1,16 @@
 body {
   margin: 0;
- background-image: linear-gradient(to bottom, #434343 0%, black 100%);
+  background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
   color: white;
-  font-family: 'Creepster', cursive;
+  font-family: 'Arial', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   font-size: 3rem;
+  font-weight: bold;
   overflow: hidden;
+  cursor: pointer;
   @media (max-width:768px) {
     font-size: 2rem;
   }
@@ -19,8 +21,8 @@ body {
 }
 
 @keyframes flicker {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.2; }
+  0%, 100% { opacity: 1; letter-spacing: 10px;}
+  50% { opacity: 0; letter-spacing: 1px;}
 }
 
 .jumpscare {
